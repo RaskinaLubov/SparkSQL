@@ -40,4 +40,5 @@ object SparkSQLApp extends App{
 
   import sqlContext._
   sql(query).show()
+  sc.stop()
 }
