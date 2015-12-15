@@ -34,7 +34,7 @@ object SparkSQLApp extends App{
   sacr_crimes_df.registerTempTable("crime")
 
   val query = """
-                 select district,count(*) as count_crime_of_distr from crime
+                 select district,count(*) as crime_in_distr from crime
                  group by district
               """
 
